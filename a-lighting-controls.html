@@ -28,10 +28,11 @@
     const swatch = document.querySelector("#swatch");
 
     function update() {
-      let item = stageLights[0];
-      for (let i = 0; i < stageLights.length; i++) {
-        if (i === presetIndex) item = stageLights[i];
-      }
+      // let item = stageLights[0];
+      // for (let i = 0; i < stageLights.length; i++) {
+      //   if (i === presetIndex) item = stageLights[i];
+      // }
+      let item = stageLights[presetIndex];
       label.textContent = item.name;
       swatch.style.backgroundColor = item.color;
     }
